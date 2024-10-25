@@ -81,20 +81,17 @@ const StepTwo = ({ move }: any) => {
 
   return (
     <>
-      <div className="mt-8 w-full md:w-[80%] font-main p-6 md:p-4 mx-auto">
+      <div className="translate-y-1/2 w-[90%] lg:w-[40%] mx-auto p-4 bg-stone-50 shadow rounded-lg border">
         <form>
           {/* form header */}
           <div>
-            <h3 className="md:text-bg text-4xl font-bold text-white">
+            <h3 className="text-blue-900 text-4xl font-bold ">
               Complete Sign Up
             </h3>
           </div>
           {/* Email or sub account */}
           <div className="flex flex-col mt-8">
-            <label
-              htmlFor="number"
-              className="md:text-sm text-white md:text-bg"
-            >
+            <label htmlFor="number" className="text-blue-900">
               Phone Number
             </label>
             <div>
@@ -104,21 +101,21 @@ const StepTwo = ({ move }: any) => {
                 id="phone_number"
                 value={phone_number}
                 onChange={(e) => setPhoneNumber(e.target.value)}
-                className="rounded text-base mt-2 px-2 py-3 w-full bg-neutral-300 outline-none"
+                className="rounded text-base mt-2 px-2 py-3 w-full bg-blue-50 border-blue-500 border outline-none"
               />
             </div>
           </div>
           {/* sign up button */}
           <div className="flex justify-between items-center my-3">
             <button
-              className="font-main capitalize text-bg bg-neutral-300 rounded py-2 px-3  border border-card md:border-bg items-center"
+              className="font-main capitalize text-blue-500 bg-blue-50 rounded py-2 px-3  border border-blue-500 items-center"
               onClick={() => move(false)}
             >
               go back
             </button>
             <button
               onClick={registerUser}
-              className="font-main bg-card md:bg-bg text-text_main text-white text-[1rem] rounded shadow py-2 px-3"
+              className="font-main bg-blue-600 text-text_main text-white text-[1rem] rounded shadow py-2 px-3"
             >
               Create Account
             </button>

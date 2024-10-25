@@ -77,11 +77,11 @@ const ForgottenPasswordForm = () => {
   return (
     <>
       {!showReset && (
-        <div className="mt-8 w-full md:w-[80%] font-main p-4 mx-auto">
+        <div className="mt-8 w-full md:w-[40%] font-main p-4 mx-auto rounded-lg bg-stone-50 translate-y-1/2">
           <form>
             {/* form header */}
             <div>
-              <h3 className="text-white md:text-bg text-4xl font-bold">
+              <h3 className="text-blue-900 text-3xl font-bold">
                 Forgot Password
               </h3>
             </div>
@@ -100,11 +100,11 @@ const ForgottenPasswordForm = () => {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="rounded my-3 font-main flex-1 text-base px-2 py-3 bg-neutral-300 outline-none"
+                  className="rounded my-3 font-main flex-1 text-base px-2 py-3 bg-blue-50 border border-blue-400 outline-none"
                 />
                 <button
                   onClick={sendEmail}
-                  className="bg-card md:bg-bg font-main rounded text-white mx-1 py-3 px-2"
+                  className="bg-blue-600 font-main rounded text-white mx-1 py-3 px-2"
                 >
                   Send Code
                 </button>
@@ -113,7 +113,7 @@ const ForgottenPasswordForm = () => {
             {/* submit button */}
             <button
               onClick={() => setShowReset(true)}
-              className="font-main bg-card md:bg-bg text-white text-[1rem] mt-8 rounded shadow inline-block w-full py-2"
+              className="font-main bg-blue-600 text-white text-[1rem] mt-8 rounded shadow inline-block w-full py-2"
             >
               Next
             </button>
@@ -121,7 +121,7 @@ const ForgottenPasswordForm = () => {
         </div>
       )}
       {showReset && (
-        <div className="mt-8 w-full font-main md:w-[80%] p-4 mx-auto">
+        <div className="mt-8 w-full font-main md:w-[35%] p-4 mx-auto">
           <form>
             {/* form header */}
             <div>
