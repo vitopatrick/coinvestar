@@ -6,9 +6,8 @@ export const formatCurrency = (price: number = 0) => {
     currency: "USD",
     style: "currency",
     notation: "standard",
-    maximumFractionDigits: 0,
+    maximumFractionDigits: 2,
   }).format(price);
-   
 };
 
 export const convertCurrency = (
