@@ -21,17 +21,17 @@ export const faqs = [
     id: 4,
     question: "How quickly my withdrawal request is processed?",
     answer:
-      "coinvestar processes all withdrawal requests within 1 hour.However verification may take longer time, if client didn't submit all requested documents in time.",
+      "Neo Exchanger processes all withdrawal requests within 1 hour.However verification may take longer time, if client didn't submit all requested documents in time.",
   },
   {
     id: 5,
-    question: "Does Coinvestar withhold a tax from payouts?",
+    question: "Does Neo Exchanger withhold a tax from payouts?",
     answer:
-      "coinvestar doesn't withhold any taxes. However, as a customer, it is your responsibility to follow the taxes requirements in your jurisdiction.",
+      "Neo Exchanger doesn't withhold any taxes. However, as a customer, it is your responsibility to follow the taxes requirements in your jurisdiction.",
   },
   {
     id: 6,
-    question: "How can I close my Coinvestar account?",
+    question: "How can I close my Neo Exchanger account?",
     answer:
       "Please chat with our support to request closing of your account. You will receive a confirmation when this request will be completed.",
   },

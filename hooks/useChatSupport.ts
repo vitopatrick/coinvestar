@@ -1,17 +1,23 @@
 import { useEffect } from "react";
 
-export const useChatSupport = () => {
+export const useJivoChat = () => {
   useEffect(() => {
-    var Tawk_API: any = Tawk_API || {},
-      Tawk_LoadStart = new Date();
-    (function () {
-      var s1: any = document.createElement("script"),
-        s0: any = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = "https://embed.tawk.to/64689e0ead80445890ee0dc7/1h0saiqpl";
-      s1.charset = "UTF-8";
-      s1.setAttribute("crossorigin", "*");
-      s0.parentNode.insertBefore(s1, s0);
-    })();
+    // Check if the script is already added
+    if (!document.getElementById("jivo-script")) {
+      // JivoChat initialization
+      const script = document.createElement("script");
+      script.id = "jivo-script"; // Unique ID to avoid duplicate scripts
+      script.src = "//code.jivosite.com/widget/gVykLV5gLD";
+      script.async = true;
+      document.body.appendChild(script);
+    }
+
+    return () => {
+      // Cleanup if you want to remove the script on unmount
+      const jivoScript = document.getElementById("jivo-script");
+      if (jivoScript) {
+        jivoScript.remove();
+      }
+    };
   }, []);
 };

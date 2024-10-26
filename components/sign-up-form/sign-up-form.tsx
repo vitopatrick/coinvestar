@@ -28,7 +28,7 @@ const SignUpForm = ({ move }: any) => {
 
   return (
     <>
-      <div className="w-[90%] lg:w-[50%] mx-auto translate-y-1/2 shadow-sm bg-stone-50 p-4 rounded-lg border">
+      <div className="w-[90%] lg:w-[50%] mx-auto translate-y-1/3 shadow-sm bg-stone-50 p-4 rounded-lg border">
         <form>
           {/* form header */}
           <div>

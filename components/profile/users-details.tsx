@@ -19,9 +19,9 @@ const UsersDetails = ({
   return (
     <>
       {/* parent grid container */}
-      <div className="md:w-[60%] mx-auto md:grid-cols-3 gap-4 px-2 text-white">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 text-white shadow">
         {/* grid children */}
-        <div className="my-2 p-4 flex items-center gap-6 bg-bg rounded shadow">
+        <div className="my-2 p-4 flex items-center gap-6 bg-bg  shadow rounded-xl">
           {loading && <SkeletonCircle width={50} height={50} />}
           {!loading && (
             <div className="bg-card p-3 md:p-5 rounded-full">
@@ -39,7 +39,7 @@ const UsersDetails = ({
           </div>
         </div>
         {/* grid child 2 */}
-        <div className="my-2 p-4 flex items-center gap-6 bg-bg rounded shadow">
+        <div className="my-2 p-4 flex items-center gap-6 bg-bg rounded-xl shadow">
           {loading && <SkeletonCircle width={50} height={50} />}
           {!loading && (
             <div className="bg-card p-3 md:p-5 rounded-full">
@@ -57,7 +57,7 @@ const UsersDetails = ({
           </div>
         </div>
         {/* grid child 3 */}
-        <div className="my-2 p-4 font-sec flex items-center gap-6 bg-bg rounded shadow">
+        <div className="my-2 p-4 font-sec flex items-center gap-6 bg-bg rounded-xl shadow">
           {loading && <SkeletonCircle width={50} height={50} />}
           {!loading && (
             <div className="bg-card p-3 md:p-5 rounded-full">

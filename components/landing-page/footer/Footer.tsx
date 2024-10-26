@@ -55,8 +55,8 @@ const Footer = () => {
           invest money that you cannot afford to lose. Please ensure you read
           our terms and conditions before making any operation in the platform.
           Under no circumstances the company has any liability to any person or
-          entity for any loss or damage cause by operations on this website.
-          coinvestar nor its agents or partners are not registered and do not
+          entity for any loss or damage cause by operations on this website. Neo
+          Exchanger nor its agents or partners are not registered and do not
           provide any services on the USA territory.
         </div>
         {/* end of warning */}
@@ -70,7 +70,7 @@ const Footer = () => {
             Chat with our customer support 24/7 online
           </p>
           <p className="text-neutral-500">
-            © coinvestar {new Date().getFullYear()}
+            © Neo Exchanger {new Date().getFullYear()}
           </p>
         </div>
       </div>
