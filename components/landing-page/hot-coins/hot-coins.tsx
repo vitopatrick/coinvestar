@@ -13,8 +13,8 @@ const TrendingCoinsTable = () => {
         <div className="text-center py-3 text-2xl md:text-4xl font-bold">
           Explore the Latest Market Update
         </div>
-        {loading && <Loading />}
-        {!loading && <CoinTable coins={coins} />}
+        {/* {loading && <Loading />}
+        {!loading && <CoinTable coins={coins} />} */}
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ const Platform = () => {
             },
           }}
         >
-          <Chart />
+          {/* <Chart /> */}
         </motion.div>
       </div>
     </div>

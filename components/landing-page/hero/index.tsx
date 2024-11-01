@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center my-16">
           <motion.h1
             variants={variants}
-            className="text-4xl md:text-6xl capitalize font-bold text-center leading-normal"
+            className="text-3xl md:text-4xl capitalize font-bold text-center leading-normal"
           >
             build your Investment Portfolio today
           </motion.h1>
@@ -49,7 +49,14 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <TrendingCoins />
+      <div>
+        <img
+          src="https://naga.com/_next/image?url=%2Fimages%2Fwhy-choose-naga%2Finvest%2Fimg-3.png&w=1440&q=75"
+          alt="image"
+          className="mx-auto w-[90%] lg:w-[50%]"
+        />
+      </div>
+      {/* <TrendingCoins /> */}
     </motion.section>
   );
 };
